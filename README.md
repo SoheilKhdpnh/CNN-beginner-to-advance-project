@@ -31,7 +31,7 @@ results, and writeup.
 |---|---------|-------------|---------|----------|----------|
 | 1 | MNIST Digit Classifier | Classifies handwritten digits 0–9 using a custom 2-block CNN | MNIST (70K images) | 99.1% | [Open](beginner/01-mnist-classifier/) |
 | 2 | Fashion MNIST Classifier | Classifies 10 clothing categories with BatchNorm and augmentation | Fashion MNIST (70K images) | 93.2% | [Open](beginner/02-fashion-mnist/) |
-| 3 | Cats vs Dogs | Coming soon | Kaggle (25K images) | — | — |
+| 3 | Cats vs Dogs | Binary classifier — cat or dog from real photos | Microsoft (25K images) | 96.49% | [Open](beginner/03-cats-vs-dogs/) |
 
 ### Intermediate
 
