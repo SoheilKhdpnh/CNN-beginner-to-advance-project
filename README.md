@@ -37,7 +37,7 @@ results, and writeup.
 
 | # | Project | Description | Dataset | Metric | Notebook |
 |---|---------|-------------|---------|--------|----------|
-| 4 | Plant Disease Detector | Coming soon | PlantVillage | — | — |
+| 4 | Plant Disease Detector | Diagnoses plant disease from leaf photos using ResNet50 transfer learning | PlantVillage (54K images) | 99.XX% | [Open](intermediate/01-plant-disease-detector/) |
 | 5 | Facial Emotion Recognition | Coming soon | FER-2013 | — | — |
 | 6 | Traffic Sign Classifier | Coming soon | GTSRB | — | — |
 
