@@ -38,7 +38,7 @@ results, and writeup.
 | # | Project | Description | Dataset | Metric | Notebook |
 |---|---------|-------------|---------|--------|----------|
 | 4 | Plant Disease Detector | Diagnoses plant disease from leaf photos using ResNet50 transfer learning | PlantVillage (54K images) | 99.38% | [Open](intermediate/01-plant-disease-detector/) |
-| 5 | Facial Emotion Recognition | Coming soon | FER-2013 | — | — |
+| 5 | Facial Emotion Recognition | Classifies 7 facial expressions, handles severe class imbalance with weighted loss | FER-2013 (36K images) | 62.72% | [Open](intermediate/02-facial-emotion-recognition/) |
 | 6 | Traffic Sign Classifier | Coming soon | GTSRB | — | — |
 
 ### Advanced
