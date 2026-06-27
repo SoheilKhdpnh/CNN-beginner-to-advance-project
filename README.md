@@ -39,7 +39,7 @@ results, and writeup.
 |---|---------|-------------|---------|--------|----------|
 | 4 | Plant Disease Detector | Diagnoses plant disease from leaf photos using ResNet50 transfer learning | PlantVillage (54K images) | 99.38% | [Open](intermediate/01-plant-disease-detector/) |
 | 5 | Facial Emotion Recognition | Classifies 7 facial expressions, handles severe class imbalance with weighted loss | FER-2013 (36K images) | 62.72% | [Open](intermediate/02-facial-emotion-recognition/) |
-| 6 | Traffic Sign Classifier | Coming soon | GTSRB | — | — |
+| 6 | Traffic Sign Classifier | 43-class sign recognition with MobileNetV2 + TFLite edge deployment (60% smaller, 100x faster single-image inference) | GTSRB (50K images) | 76.22% | [Open](intermediate/03-traffic-sign-classifier/) |
 
 ### Advanced
 
@@ -58,6 +58,7 @@ results, and writeup.
 | MNIST Classifier | 99.4% | 99.2% | 99.1% |
 | Fashion MNIST | 94.1% | 93.4% | 93.2% |
 | Cats vs Dogs | — | — | — |
+| Traffic Sign Classifier | 96.4% | 77.3% | 76.2% |
 
 ---
 
