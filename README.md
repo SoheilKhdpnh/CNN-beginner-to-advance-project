@@ -45,7 +45,7 @@ results, and writeup.
 
 | # | Project | Description | Dataset | Metric | Notebook |
 |---|---------|-------------|---------|--------|----------|
-| 7 | X-Ray Pneumonia Detection | Coming soon | NIH Chest X-Ray | — | — |
+| 7 | X-Ray Pneumonia Detection | DenseNet121 transfer learning with Grad-CAM explainability, optimized for recall over accuracy | Chest X-Ray (5.8K images) | 90.54% acc / 95.38% recall | [Open](advanced/01-pneumonia-detection/) |
 | 8 | Object Detection | Coming soon | COCO | — | — |
 | 9 | Image Captioning | Coming soon | MS-COCO | — | — |
 
@@ -59,7 +59,7 @@ results, and writeup.
 | Fashion MNIST | 94.1% | 93.4% | 93.2% |
 | Cats vs Dogs | — | — | — |
 | Traffic Sign Classifier | 96.4% | 77.3% | 76.2% |
-
+| X-Ray Pneumonia Detection | 96.0% | 95.7% recall | 90.5% acc / 95.4% recall |
 ---
 
 ## Tech Stack
