@@ -46,7 +46,7 @@ results, and writeup.
 | # | Project | Description | Dataset | Metric | Notebook |
 |---|---------|-------------|---------|--------|----------|
 | 7 | X-Ray Pneumonia Detection | DenseNet121 transfer learning with Grad-CAM explainability, optimized for recall over accuracy | Chest X-Ray (5.8K images) | 90.54% acc / 95.38% recall | [Open](advanced/01-pneumonia-detection/) |
-| 8 | Object Detection | Coming soon | COCO | — | — |
+| 8 | Object Detection | YOLOv8 real-time detection on images + video, FPS benchmark across model sizes, FastAPI deployment | COCO (pretrained) | 89.7 FPS video / 72 FPS static | [Open](advanced/02-object-detection/) |
 | 9 | Image Captioning | Coming soon | MS-COCO | — | — |
 
 ---
@@ -60,6 +60,7 @@ results, and writeup.
 | Cats vs Dogs | — | — | — |
 | Traffic Sign Classifier | 96.4% | 77.3% | 76.2% |
 | X-Ray Pneumonia Detection | 96.0% | 95.7% recall | 90.5% acc / 95.4% recall |
+| Object Detection (YOLOv8n) | — | — | 72 FPS (static) / 89.7 FPS (video) |
 ---
 
 ## Tech Stack
