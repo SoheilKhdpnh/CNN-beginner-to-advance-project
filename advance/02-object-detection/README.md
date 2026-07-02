@@ -64,8 +64,29 @@ curl -X POST "http://localhost:8000/detect" \
   "count": 4
 }
 ```
+![Accuracy/recall/precision curves](results/accuracy_curve.png)
+![Confusion matrix](results/confusion_matrix.png)
+
+## Grad-CAM explainability
+
+**Pneumonia case (99.7% confidence):**
+![Grad-CAM pneumonia example](results/gradcam_pneumonia_example.png)
+
+Heat concentrates over central/lower lung and mediastinal regions —
+anatomically consistent with where pneumonia consolidation commonly presents.
+
+**Normal case (71.8% confidence):**
+![Grad-CAM normal example](results/gradcam_normal_example.png)
+
+Notably lower confidence and a more peripheral, less centrally-localized
+activation pattern compared to the pneumonia example — discussed further below.
 
 ## Architecture
+Input (224×224×3)
+→ DenseNet121 (pretrained, ImageNet weights, dense connectivity)
+→ GlobalAveragePooling2D
+→ Dense(256) → BatchNorm → Dropout(0.4)
+→ Dense(1, Sigmoid)
 This project uses a fully pretrained YOLOv8 model — no custom training was
 performed. YOLOv8 uses a single-pass detection architecture: rather than
 first proposing candidate regions and then classifying them (two-stage
@@ -116,6 +137,7 @@ cell in one forward pass — which is why it achieves real-time speeds.
 ```
 3. Open in Kaggle Notebooks or locally (GPU recommended for real-time speed)
 4. Open the notebook
+advanced/01-pneumonia-detection/notebooks/pneumonia_detection.ipynb
 ## Dataset
 No custom dataset — uses YOLOv8 pretrained on
 [COCO](https://cocodataset.org/) (118K training images, 80 object
