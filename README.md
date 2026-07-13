@@ -50,7 +50,12 @@ results, and writeup.
 | 9 | Image Captioning | CNN encoder (InceptionV3) + LSTM decoder generates natural language descriptions of photos | Flickr8k (8K images) | BLEU-1: 0.496 / BLEU-4: 0.110 | [Open](advanced/03-image-captioning/) |
 
 ---
+## PyTorch Re-implementations
 
+| # | Project | Framework | Result | vs Keras | Link |
+|---|---------|-----------|--------|----------|------|
+| 1 | MNIST Classifier | PyTorch | 99.58% | +0.48% | [Open](pytorch/01-mnist-classifier/) |
+| 2 | Cats vs Dogs | PyTorch (ResNet50) | 99.48% | +5.01% | [Open](pytorch/02-cats-vs-dogs/) |
 ## Results Snapshot
 
 | Project | Train Acc | Val Acc | Test Acc |
